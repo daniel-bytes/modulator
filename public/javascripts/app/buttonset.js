@@ -1,4 +1,5 @@
-angular.module("modulator.app").directive("buttonset", function() {
+angular.module("modulator.app")
+.directive("buttonset", function() {
 	return {
 		restrict: "E",
     	replace: "true",
@@ -19,10 +20,10 @@ angular.module("modulator.app").directive("buttonset", function() {
 						td.addEventListener("mousedown", function(e) {
 							e.target.classList.add("active");
 							scope.$emit("button:press", [{ row: row, col: col }]);
-						});
-						
-						td.addEventListener("mouseup", function(e) {
-							e.target.classList.remove("active");
+							
+							setTimeout(function() {
+								e.target.classList.remove("active");
+							}, 200);
 						});
 					})(row, col);
 				}

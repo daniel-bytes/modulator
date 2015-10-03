@@ -13,9 +13,9 @@ a {
 
 .button {
     display: inline-block;
-    width: 100px;
-    height: 100px;
-    margin: 10px;
+    width: 65px;
+    height: 65px;
+    margin: 5px;
     background-color: #00adef;
     border-radius: 10px;
     opacity: 1;

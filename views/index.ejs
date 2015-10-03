@@ -4,11 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     
-    <title>
-      modulator
-    </title>
+    <title>modulator</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   
   <body ng-app="modulator.app">
@@ -16,10 +13,20 @@
       <buttonset id="buttons" rows="4" cols="4"></buttonset>
     </section>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
-    <script src="/javascripts/app.js"></script>
-    <script src="/javascripts/buttonset.js"></script>
-    <script src="/javascripts/controller.js"></script>
+    <!-- Libraries -->
+    <script src="/bower_components/underscore/underscore-min.js"></script>
+    <script src="/bower_components/angular/angular.min.js"></script>
+    
+    <!-- Components -->
+    <script src="/javascripts/components/sequencer.js"></script>
+    
+    <!-- App (Angular) -->
+    <script src="/javascripts/app/underscore.js"></script>
+    <script src="/javascripts/app/audio-context.js"></script>
+    <script src="/javascripts/app/index.js"></script>
+    <script src="/javascripts/app/sequencer.js"></script>
+    <script src="/javascripts/app/buttonset.js"></script>
+    <script src="/javascripts/app/controller.js"></script>
   </body>
 
 </html>
