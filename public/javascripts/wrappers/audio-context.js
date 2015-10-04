@@ -1,3 +1,5 @@
+"use strict";
+
 angular.module('audio-context', [])
 .factory("audioContext", ['$window', function($window) {
 	var AudioContext = $window.AudioContext || $window.webkitAudioContext;

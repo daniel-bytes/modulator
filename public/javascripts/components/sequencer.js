@@ -1,3 +1,5 @@
+"use strict";
+
 function Sequencer(_, context, emitter, params) {
 	params = params || {};
 	

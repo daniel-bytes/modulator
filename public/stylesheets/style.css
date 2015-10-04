@@ -11,6 +11,11 @@ a {
   border: 1px solid black;
 }
 
+.left {
+    float:left;
+    padding: 10px;
+}
+
 .button {
     display: inline-block;
     width: 65px;

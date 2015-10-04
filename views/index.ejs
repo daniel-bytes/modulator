@@ -10,21 +10,32 @@
   
   <body ng-app="modulator.app">
     <section ng-controller="modulator.controller">
-      <buttonset id="buttons" rows="4" cols="4"></buttonset>
+      <div class="left">
+        <button ng-click="Start()">Start</button>
+        <button ng-click="Stop()">Stop</button>
+      </div>
+      <div class="left">
+        <buttonset id="buttons"></buttonset>
+      </div>
     </section>
     
     <!-- Libraries -->
     <script src="/bower_components/underscore/underscore-min.js"></script>
     <script src="/bower_components/angular/angular.min.js"></script>
     
+    <!-- Angular Library Wrappers -->
+    <script src="/javascripts/wrappers/underscore.js"></script>
+    <script src="/javascripts/wrappers/audio-context.js"></script>
+    
     <!-- Components -->
     <script src="/javascripts/components/sequencer.js"></script>
+    <script src="/javascripts/components/sample.js"></script>
     
     <!-- App (Angular) -->
-    <script src="/javascripts/app/underscore.js"></script>
-    <script src="/javascripts/app/audio-context.js"></script>
     <script src="/javascripts/app/index.js"></script>
+    <script src="/javascripts/app/config.js"></script>
     <script src="/javascripts/app/sequencer.js"></script>
+    <script src="/javascripts/app/samples.js"></script>
     <script src="/javascripts/app/buttonset.js"></script>
     <script src="/javascripts/app/controller.js"></script>
   </body>
