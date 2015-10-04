@@ -18,10 +18,10 @@ describe('sequencer', function() {
 		emitter = {
 			$emit: function(name, detail) {}
 		};
-    	
-		spyOn(emitter, '$emit');
 		
 		sequencer = new Sequencer(_, audioContext, emitter, {});
+    	
+		spyOn(emitter, '$emit');
 	});
 
 	it('should get value of zero after init', function() {
